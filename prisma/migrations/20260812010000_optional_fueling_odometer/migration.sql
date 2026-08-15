@@ -1,0 +1,1 @@
+ALTER TABLE "Fueling" ALTER COLUMN "odometer" DROP NOT NULL;

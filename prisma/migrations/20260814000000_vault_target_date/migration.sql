@@ -1,0 +1,1 @@
+ALTER TABLE "Vault" ADD COLUMN "targetDate" TIMESTAMP(3);

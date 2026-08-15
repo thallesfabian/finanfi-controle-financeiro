@@ -1,0 +1,16 @@
+services:
+  app:
+    build:
+      target: deps
+    command: sh -c "npx prisma migrate deploy && npm run dev"
+    entrypoint: []
+    environment:
+      NODE_ENV: development
+      WATCHPACK_POLLING: "true"
+    volumes:
+      - .:/app
+      - app_node_modules:/app/node_modules
+      - app_next:/app/.next
+volumes:
+  app_node_modules:
+  app_next:

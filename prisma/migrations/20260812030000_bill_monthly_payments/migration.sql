@@ -1,0 +1,2 @@
+CREATE TABLE "BillPayment" ("id" TEXT NOT NULL,"month" INTEGER NOT NULL,"year" INTEGER NOT NULL,"paidAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,"billId" TEXT NOT NULL,CONSTRAINT "BillPayment_pkey" PRIMARY KEY ("id"),CONSTRAINT "BillPayment_billId_fkey" FOREIGN KEY ("billId") REFERENCES "Bill"("id") ON DELETE CASCADE ON UPDATE CASCADE);
+CREATE UNIQUE INDEX "BillPayment_billId_month_year_key" ON "BillPayment"("billId", "month", "year");
