@@ -38,3 +38,119 @@
 .vault-create .section-title p{margin:5px 0 0}.vault-form{display:grid;grid-template-columns:2fr 1fr 1fr 1fr auto;align-items:end;gap:12px}.vault-form .field{margin:0}.vault-form input{width:100%}.vault-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:16px}.vault-card{padding:24px}.vault-card-head{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:12px}.vault-card-head h2{margin:3px 0 0}.vault-icon{display:grid;place-items:center;width:45px;height:45px;color:var(--primary);background:#eeecff;border-radius:13px}.vault-balance{display:flex;align-items:baseline;gap:8px;margin:24px 0 12px}.vault-balance span{color:var(--muted)}.vault-balance strong{font-size:25px}.vault-balance small{color:var(--muted)}.vault-progress-label{display:flex;justify-content:space-between;margin:8px 0 20px;color:var(--muted);font-size:12px}.vault-progress-label strong{color:var(--text)}.vault-daily{display:flex;align-items:center;gap:13px;margin:18px 0;padding:16px;color:#fff;background:linear-gradient(135deg,#4338ca,#635bff);border-radius:13px}.vault-daily.complete{background:linear-gradient(135deg,#087a4b,#16a36a)}.vault-daily.overdue{background:linear-gradient(135deg,#b42318,#e45454)}.vault-daily-icon{display:grid;place-items:center;width:42px;height:42px;background:#ffffff22;border-radius:11px}.vault-daily>div:last-child{display:grid;gap:3px}.vault-daily strong{font-size:22px}.vault-daily small,.vault-daily span{color:#ffffffcc}.vault-no-date{display:flex;align-items:center;gap:10px;margin:18px 0;padding:15px;color:#76570b;background:#fff8dc;border-radius:11px}.vault-details{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px}.vault-details div{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:3px 8px;padding:12px;background:#f7f8fc;border-radius:10px}.vault-details svg{grid-row:1/3;color:var(--muted)}.vault-details span{color:var(--muted);font-size:12px}.vault-deposit{display:flex;gap:8px}.vault-deposit input{min-width:0;flex:1;padding:11px;border:1px solid var(--border);border-radius:10px}.vault-plan-edit{margin-top:16px;padding-top:14px;border-top:1px solid var(--border)}.vault-plan-edit summary{color:var(--primary);font-size:13px;font-weight:700;cursor:pointer}.vault-plan-edit form{display:grid;grid-template-columns:1fr 1fr auto;align-items:end;gap:10px;margin-top:10px}.vault-plan-edit .field{margin:0}.vault-complete{border-color:#b7e7cf}@media(max-width:1050px){.vault-form{grid-template-columns:1fr 1fr}.vault-form .btn{grid-column:1/-1}.vault-grid{grid-template-columns:1fr}}@media(max-width:550px){.vault-form,.vault-plan-edit form{grid-template-columns:1fr}.vault-deposit{flex-direction:column}.vault-details{grid-template-columns:1fr}.vault-balance{align-items:flex-start;flex-direction:column;gap:4px}}
 .vault-deposit{align-items:end}.vault-deposit-field{display:grid;flex:1;gap:5px;min-width:0}.vault-deposit-field label{font-size:13px;font-weight:700}.vault-deposit-field input{width:100%}.vault-deposit-field small{color:var(--muted);font-size:11px}.vault-deposit .btn{margin-bottom:16px}@media(max-width:550px){.vault-deposit .btn{margin-bottom:0}}
 .fuel-actions{display:flex;align-items:center;gap:8px}.fuel-actions>form{margin:0}.fuel-actions summary{padding:8px 12px}.fuel-edit-panel{width:min(720px,calc(100vw - 32px))}.fuel-edit-panel>p{margin-top:-4px}.fuel-edit-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.fuel-edit-buttons{display:flex;justify-content:flex-end;gap:8px;margin-top:20px}@media(max-width:600px){.fuel-edit-grid{grid-template-columns:1fr}.fuel-actions{align-items:stretch;flex-direction:column}.fuel-edit-buttons{flex-direction:column-reverse;text-align:center}}
+.bills-month-bar{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:16px}.bills-period{display:flex;align-items:end;gap:10px}.bills-period .field{margin:0}.bills-period select{min-width:145px}.bills-period-name{display:grid;gap:4px;text-align:right}.bills-period-name strong{font-size:19px}.monthly-income{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:16px;background:linear-gradient(135deg,#f7f6ff,#fff)}.monthly-income h2{margin:5px 0}.monthly-income p{margin:0}.monthly-income form{display:flex;align-items:end;gap:10px;min-width:330px}.monthly-income .field{flex:1;margin:0}.monthly-income input{width:100%}.bills-summary{margin-bottom:16px}.bills-available{color:#fff;background:linear-gradient(135deg,#087a4b,#16a36a);border:0}.bills-available .metric-label,.bills-available small{color:#eafff5}.bills-available.is-negative{background:linear-gradient(135deg,#b42318,#e45454)}.bills-table-heading{display:flex;align-items:center;justify-content:space-between;margin:26px 0 8px}.bills-table-heading h2{margin:0 0 5px}.bills-table-heading>strong{padding:7px 10px;background:#f0f1f5;border-radius:20px}@media(max-width:800px){.bills-month-bar,.monthly-income{align-items:stretch;flex-direction:column}.bills-period-name{text-align:left}.monthly-income form{min-width:0}.bills-period{flex-wrap:wrap}}@media(max-width:520px){.bills-period,.monthly-income form{display:grid;grid-template-columns:1fr}.bills-period select{width:100%}.bills-table-heading{align-items:flex-start;flex-direction:column;gap:10px}}
+.bills-workspace{display:grid;grid-template-columns:340px minmax(0,1fr);gap:16px}.bill-add-card{align-self:start}.bill-add-card h2{margin:5px 0}.bill-add-card>p{margin:0 0 18px}.bill-month-form .field{margin:12px 0}.bill-form-row{display:grid;grid-template-columns:110px 1fr;gap:10px}.bill-fixed-check{margin:14px 0}.month-debts-card{padding:0;overflow:hidden}.month-debts-head{display:flex;justify-content:space-between;align-items:center;padding:22px 24px;color:#fff;background:linear-gradient(135deg,#171b35,#30375f)}.month-debts-head h2{margin:4px 0}.month-debts-head p{margin:0;color:#cbd1ee;font-size:13px}.month-debts-head .metric-label{color:#aeb7e8}.month-debts-head>div:last-child{display:grid;gap:3px;text-align:right}.month-debts-head>div:last-child strong{font-size:23px}.month-debts-head>div:last-child span{color:#cbd1ee;font-size:12px}.month-debts-list{display:grid;padding:8px 20px 20px}.month-debt{padding:15px 4px;border-bottom:1px solid var(--border)}.month-debt:last-child{border-bottom:0}.month-debt-main{display:grid;grid-template-columns:48px minmax(0,1fr) auto;align-items:center;gap:12px}.debt-due{display:grid;place-items:center;width:46px;height:46px;color:var(--primary);background:#eeecff;border-radius:11px}.debt-due span{font-size:10px;text-transform:uppercase}.debt-due strong{font-size:17px}.debt-name,.debt-value{display:grid;gap:4px}.debt-name span{color:var(--muted);font-size:12px}.debt-value{text-align:right}.debt-value>strong{font-size:17px}.debt-value .bill-status{justify-self:end}.month-debt.is-paid .debt-name>strong,.month-debt.is-paid .debt-value>strong{text-decoration:line-through;opacity:.55}.month-debt-actions{display:flex;align-items:flex-start;justify-content:flex-end;gap:7px;margin-top:11px}.month-debt-actions form{margin:0}.month-debt-actions .btn{padding:8px 10px;font-size:12px}.debt-edit>summary{list-style:none;cursor:pointer}.debt-edit>summary::-webkit-details-marker{display:none}.debt-edit[open]{flex:1}.debt-edit[open]>summary{display:none}.debt-edit-form{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr auto;align-items:end;gap:8px;padding:14px;background:#f7f8fc;border-radius:11px}.debt-edit-form .field{margin:0}.debt-edit-form input,.debt-edit-form select{width:100%;padding:9px}.debt-edit-form>small{grid-column:1/-1}@media(max-width:1050px){.bills-workspace{grid-template-columns:1fr}.bill-month-form{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}.bill-month-form>.fixed-check,.bill-month-form>.btn{grid-column:1/-1}}@media(max-width:760px){.debt-edit-form{grid-template-columns:1fr 1fr}.month-debt-actions{flex-wrap:wrap}.debt-edit[open]{flex-basis:100%;order:4}}@media(max-width:520px){.bill-month-form{grid-template-columns:1fr}.bill-month-form>.fixed-check,.bill-month-form>.btn{grid-column:auto}.month-debts-head{align-items:flex-start;flex-direction:column;gap:12px}.month-debts-head>div:last-child{text-align:left}.month-debt-main{grid-template-columns:44px 1fr}.debt-value{grid-column:2;text-align:left}.debt-value .bill-status{justify-self:start}.month-debt-actions{justify-content:flex-start}.debt-edit-form{grid-template-columns:1fr}}
+.transaction-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.transaction-actions > form {
+  margin: 0;
+}
+
+.transaction-actions summary {
+  padding: 8px 12px;
+}
+
+.transaction-edit-panel {
+  width: min(720px, calc(100vw - 32px));
+}
+
+.transaction-edit-panel > p {
+  margin-top: -4px;
+}
+
+.transaction-edit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.transaction-edit-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.monthly-auto-total {
+  display: grid;
+  gap: 6px;
+  min-width: 245px;
+  padding: 16px 20px;
+  background: #f7f8fc;
+  border-radius: 12px;
+  text-align: right;
+}
+
+.monthly-auto-total span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.monthly-auto-total strong {
+  font-size: 27px;
+}
+
+.goal-recovery {
+  display: grid;
+  gap: 5px;
+  margin: 16px 0;
+  padding: 17px 20px;
+  color: #fff;
+  background: linear-gradient(135deg, #4338ca, #635bff);
+  border-radius: 12px;
+}
+
+.goal-recovery strong {
+  font-size: 23px;
+}
+
+.goal-recovery small {
+  color: #ffffffd1;
+}
+
+.goal-recovery.complete {
+  background: linear-gradient(135deg, #087a4b, #16a36a);
+}
+
+.bills-goal-card {
+  border-color: #cfcafc;
+}
+
+.goal-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.goal-actions > form {
+  margin: 0;
+}
+
+.goal-edit-panel {
+  width: min(720px, calc(100vw - 32px));
+}
+
+@media (max-width: 600px) {
+  .transaction-edit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .transaction-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .transaction-edit-buttons {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .monthly-auto-total {
+    min-width: 0;
+    text-align: left;
+  }
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="finanfi" x1="8" y1="56" x2="56" y2="8" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#087a4b"/>
+      <stop offset="1" stop-color="#21bd7a"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#finanfi)"/>
+  <path d="M18 46V18h27v8H27v5h15v8H27v7z" fill="#fff"/>
+  <path d="m38 19 6-6 6 6" fill="none" stroke="#d9ffec" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M44 14v10" fill="none" stroke="#d9ffec" stroke-width="4" stroke-linecap="round"/>
+</svg>

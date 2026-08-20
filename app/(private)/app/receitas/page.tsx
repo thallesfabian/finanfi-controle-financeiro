@@ -1,1 +1,1 @@
-import TransactionPage from "@/components/TransactionPage";export const dynamic="force-dynamic";export default function Page(){return <TransactionPage type="INCOME"/>}
+import TransactionPage from "@/components/TransactionPage";export const dynamic="force-dynamic";export default async function Page({searchParams}:{searchParams:Promise<{month?:string;year?:string}>}){const query=await searchParams;return <TransactionPage type="INCOME" month={Number(query.month)} year={Number(query.year)}/>}
