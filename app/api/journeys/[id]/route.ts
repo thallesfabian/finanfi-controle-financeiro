@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { sessionUserId } from "@/lib/auth";
 import { externalUrl } from "@/lib/request-url";
+import { monthRedirect } from "@/lib/month";
 
 export async function POST(req: NextRequest, { params }: { params: Promise<{id:string}> }) {
   const userId = await sessionUserId();
@@ -13,7 +14,7 @@ export async function POST(req: NextRequest, { params }: { params: Promise<{id:s
   const form = await req.formData();
   if (form.get("action") === "delete") {
     await prisma.journey.delete({ where: { id } });
-    return NextResponse.redirect(externalUrl(req, "/app/motorista"), 303);
+    return NextResponse.redirect(externalUrl(req, monthRedirect("/app/motorista", form, journey.date.toISOString())), 303);
   }
 
   const date = String(form.get("date"));
@@ -41,5 +42,5 @@ export async function POST(req: NextRequest, { params }: { params: Promise<{id:s
       costs: { create: costs }
     } })
   ]);
-  return NextResponse.redirect(externalUrl(req, "/app/motorista"), 303);
+  return NextResponse.redirect(externalUrl(req, monthRedirect("/app/motorista", form, date)), 303);
 }
